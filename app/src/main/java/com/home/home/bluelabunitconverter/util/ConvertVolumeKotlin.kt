@@ -103,6 +103,4 @@ class ConvertVolumeKotlin {
     private fun usGallonToMillilitre(input: Float): Float {
         return (input * 3.785411784f) * 1000
     }
-
-
 }
