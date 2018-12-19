@@ -38,7 +38,7 @@ If the class does not have all the required values it need to make the calculati
 
 Example implementation (Java):
 ```
-ConvertTemperatureJava convert = ConvertTemperatureJava()
+ConvertTemperatureJava convert = new ConvertTemperatureJava()
 convert.setInputUnit(TEMPERATURE_KELVIN)
 convert.setInputValue("1")
 convert.setOutputUnit(TEMPERATURE_CELSIUS)
