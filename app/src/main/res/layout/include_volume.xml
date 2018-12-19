@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+            android:id="@+id/volume_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/volume_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline_horizontal_split_layouts"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"/>
+    <TextView
+            android:id="@+id/volume_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/volume_description"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/volume_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <!-- input -->
+    <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/volume_input_value"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline_vertical_center"
+            app:layout_constraintTop_toBottomOf="@id/volume_description"
+            android:hint="@string/volume_hint_value"/>
+    <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/volume_input_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/guideline_vertical_center"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/volume_input_value"
+            app:layout_constraintTop_toTopOf="@id/volume_input_value"
+            android:entries="@array/volume"/>
+
+    <!-- output -->
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/volume_output_value"
+            android:layout_marginStart="5dp"
+            android:textSize="@dimen/output_value"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline_vertical_center"
+            app:layout_constraintTop_toBottomOf="@id/volume_input_value"
+            android:hint="@string/volume_hint_value"
+            android:textStyle="bold"/>
+    <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/volume_output_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/guideline_vertical_center"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/volume_output_value"
+            app:layout_constraintTop_toBottomOf="@id/volume_input_value"
+            android:entries="@array/volume"/>
+</merge>

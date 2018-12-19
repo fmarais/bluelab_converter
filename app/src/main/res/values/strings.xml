@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bluelab Unit Converter</string>
+
+    <!-- temperature -->
+    <string name="temperature_hint_value">123</string>
+    <string name="temperature_description">(Using Java) Select the input value, input type and output type. You will then receive an output temperature for the output type you have selected</string>
+    <string name="temperature_title">Temperature Conversion</string>
+
+    <!-- volume -->
+    <string name="volume_hint_value">123</string>
+    <string name="volume_description">(Using Kotlin) Select the input value, input type and output type. You will then receive an output volume for the output type you have selected</string>
+    <string name="volume_title">Volume Conversion</string>
+</resources>

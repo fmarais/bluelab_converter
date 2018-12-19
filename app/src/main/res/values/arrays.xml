@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="temperature">
+        <item>Kelvin</item>
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </string-array>
+    <string-array name="volume">
+        <item>Litre</item>
+        <item>Millilitre</item>
+        <item>US_Gallon</item>
+    </string-array>
+</resources>
