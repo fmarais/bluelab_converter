@@ -57,7 +57,7 @@ class `utils/ConvertTemperatureJava` and `utils/ConvertVolumeKotlin`.
 It mainly focuses to test the logic of the two converstion classes.
 
 It is divided into 4 groups:
-- Check for same input types, if the input values are the same, do we get the expected result
+- Check for same input types, if the input units are the same, do we get the expected result
 - Test conversion positive and negatives for diffirent units
 - Any other invalid inputs, missing values etc
 
