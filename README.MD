@@ -1,3 +1,17 @@
+### Disclaimer
+Some classes have been built in Kotlin and some in Java, this is just to showcase my ability to work with both. 
+Normally you would like to keep the codebase consistent which makes debugging easier.
+
+Java classes:
+- util/ConvertTemperatureJava.java
+- test/ConvertTemperatureJavaUnitTest.java
+
+Kotlin classes:
+- MainActivity.kt
+- util/ConvertVolumeKotlin.kt
+- test/ConvertVolumeKotlinUnitTest.kt
+
+
 ### Main Activity `MainActivity.kt`
 
 Simple activity using Kotlin where it initiates the UI and the util conversion classes in order to do the 
@@ -16,10 +30,7 @@ clears up the main layout and keeps each child layout logically seperated.
 Also as a small touch I changed the theme to Blue and Green as this matches your website colours.
 
 ### Utils `utils/ConvertTemperatureJava` `utils/ConvertVolumeKotlin`
-This contains the business logic for all the conversions. One class is done in Java and the Other in Kotlin 
-just to showcase my ability to write in both.
-
-Normally you would like to keep your codebase type consistent as it would be easier to work with and debug.
+This contains the business logic for all the conversions.
 
 Each conversion class accepts an `inputValue`, `inputUnit` and `outputUnit`. 
 You can then call the `.convert()` method and this will return your converted value.
